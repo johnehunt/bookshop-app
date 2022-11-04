@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Controller used for all address urls.
+ */
 @RestController
 @RequestMapping("bookshop")
 public class AddressController {
