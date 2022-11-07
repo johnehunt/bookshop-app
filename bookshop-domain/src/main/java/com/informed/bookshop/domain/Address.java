@@ -57,6 +57,10 @@ public class Address {
     return postcode;
   }
 
+  public int getId() {
+    return id;
+  }
+
   public String toString() {
 		return new StringJoiner(", ", Address.class.getSimpleName() + "[", "]")
 				.add("number=" + number)
