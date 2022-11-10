@@ -21,6 +21,10 @@ public class BookshopApplication {
     System.out.println("     Server Ready");
     System.out.println("======================");
 
+    System.out.println("For the web site use");
+    System.out.println("\thttp://localhost:8082/index.html");
+
+    System.out.println("For services use:");
     System.out.println("\thttp://localhost:8082/bookshop/books");
     System.out.println("\thttp://localhost:8082/bookshop/addresses");
 	}

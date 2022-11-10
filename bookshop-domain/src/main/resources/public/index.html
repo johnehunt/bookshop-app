@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookshop App</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/bookshop-styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="js/jquery.serializejson.js"></script>
+  <script src="js/bookshop.js"></script>
+
+
+</head>
+<body>
+<h1 class="heading">Welcome Placeholder</h1>
+
+<p>
+  This independent bookshop aims to give you the best books from publishers whether they are small or large.
+</p>
+<p>
+  Browse our virtual shelves and enjoy!
+</p>
+<form>
+  <input type="button" value="click to show books" onclick="displayBooks()"/>
+</form>
+<ul>
+  <li>Click button to show books ...</li>
+</ul>
+<div id="books"></div>
+
+<form>
+  <input type="button" value="click to show addresses" onclick="displayAddresses()"/>
+</form>
+<div id="addresses"></div>
+
+
+<form id="maintain-form" action="">
+  Number: <input type="text" name="number:number" id="number" type="number"/> <br />
+  Street: <input type="text" name="street" id="street"/> <br />
+  City: <input type="text" name="city" id="city"/> <br />
+  County: <input type="text" name="county" id="county"/> <br />
+  Postcode: <input type="text" name="postcode" id="postcode"/> <br />
+  <p>
+    <button type="submit" name="add" value="add">Update Addresses</button>
+  </p>
+</form>
+
+</body>
+</html>
