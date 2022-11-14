@@ -2,6 +2,7 @@ package com.informed.bookshop.domain;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.StringJoiner;
 
@@ -19,7 +20,7 @@ public class Address {
 	private String street;
 	private String city;
 	private String county;
-  @NotNull
+  @NotBlank
 	private String postcode;
 
   public Address() {}

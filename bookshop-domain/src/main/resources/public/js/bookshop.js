@@ -20,8 +20,16 @@ $(function () {
       type: "POST",
       url: url,
       data: data,
+      success: function(result) {
+        alert('Addresses Updated');
+      },
+      failure: function(errMsg) {
+        alert(errMsg);
+      },
       contentType: "application/json; charset=utf-8", // data sent
       dataType: "json" // type of data returned
+    }).done(function() {
+      alert('Addresses Updated');
     });
 
   });
